@@ -235,7 +235,6 @@ namespace Proyecto_Final
                 }
 
                 int salchipapaPrecioUnitario = 20_000;
-
                 if (salchipapaCount > 0)
                 {
                     salchipapaLabel.Text = "Salchipapas";
