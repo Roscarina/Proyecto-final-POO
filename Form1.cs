@@ -245,7 +245,6 @@ namespace Proyecto_Final
                 }
             }
 
-
             int valorSubTotal = precioTotalCoca + precioTotalAgua + precioTotalChica + precioTotalPizza + precioTotalPerrocaliente + precioTotalSalchipapa;
             subtotal.Text = "$" + valorSubTotal.ToString();
         }
