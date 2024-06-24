@@ -47,8 +47,8 @@
             this.grBxEntradas = new System.Windows.Forms.GroupBox();
             this.txEmpanadas = new System.Windows.Forms.Label();
             this.txteque = new System.Windows.Forms.Label();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.coBxteque = new System.Windows.Forms.ComboBox();
+            this.coBxEmpanada = new System.Windows.Forms.ComboBox();
             this.grBxPostres = new System.Windows.Forms.GroupBox();
             this.txTresleche = new System.Windows.Forms.Label();
             this.txTortadechocolate = new System.Windows.Forms.Label();
@@ -64,8 +64,8 @@
             this.pizzaLabel = new System.Windows.Forms.TextBox();
             this.perrocalienteLabel = new System.Windows.Forms.TextBox();
             this.salchipapaLabel = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.tequeLabel = new System.Windows.Forms.TextBox();
+            this.empanadaLabel = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.subtotalLabel = new System.Windows.Forms.TextBox();
@@ -77,8 +77,8 @@
             this.pizzaUnidades = new System.Windows.Forms.TextBox();
             this.perrocalienteUnidades = new System.Windows.Forms.TextBox();
             this.salchipapaUnidades = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.empanadaUnidades = new System.Windows.Forms.TextBox();
+            this.tequeUnidades = new System.Windows.Forms.TextBox();
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.aguaPrecio = new System.Windows.Forms.TextBox();
@@ -86,8 +86,8 @@
             this.pizzaPrecio = new System.Windows.Forms.TextBox();
             this.perrocalientePrecio = new System.Windows.Forms.TextBox();
             this.salchipapaPrecio = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
+            this.empanadaPrecio = new System.Windows.Forms.TextBox();
+            this.tequePrecio = new System.Windows.Forms.TextBox();
             this.textBox33 = new System.Windows.Forms.TextBox();
             this.textBox34 = new System.Windows.Forms.TextBox();
             this.textBox35 = new System.Windows.Forms.TextBox();
@@ -353,8 +353,8 @@
             // 
             this.grBxEntradas.Controls.Add(this.txEmpanadas);
             this.grBxEntradas.Controls.Add(this.txteque);
-            this.grBxEntradas.Controls.Add(this.comboBox7);
-            this.grBxEntradas.Controls.Add(this.comboBox6);
+            this.grBxEntradas.Controls.Add(this.coBxteque);
+            this.grBxEntradas.Controls.Add(this.coBxEmpanada);
             this.grBxEntradas.Location = new System.Drawing.Point(667, 327);
             this.grBxEntradas.Margin = new System.Windows.Forms.Padding(4);
             this.grBxEntradas.Name = "grBxEntradas";
@@ -383,10 +383,10 @@
             this.txteque.Text = "Tequeños";
             this.txteque.Click += new System.EventHandler(this.label8_Click);
             // 
-            // comboBox7
+            // coBxteque
             // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
+            this.coBxteque.FormattingEnabled = true;
+            this.coBxteque.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
@@ -398,16 +398,16 @@
             "8",
             "9",
             "10"});
-            this.comboBox7.Location = new System.Drawing.Point(160, 68);
-            this.comboBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(55, 24);
-            this.comboBox7.TabIndex = 54;
+            this.coBxteque.Location = new System.Drawing.Point(160, 68);
+            this.coBxteque.Margin = new System.Windows.Forms.Padding(4);
+            this.coBxteque.Name = "coBxteque";
+            this.coBxteque.Size = new System.Drawing.Size(55, 24);
+            this.coBxteque.TabIndex = 54;
             // 
-            // comboBox6
+            // coBxEmpanada
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.coBxEmpanada.FormattingEnabled = true;
+            this.coBxEmpanada.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
@@ -419,11 +419,11 @@
             "8",
             "9",
             "10"});
-            this.comboBox6.Location = new System.Drawing.Point(160, 23);
-            this.comboBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(55, 24);
-            this.comboBox6.TabIndex = 54;
+            this.coBxEmpanada.Location = new System.Drawing.Point(160, 23);
+            this.coBxEmpanada.Margin = new System.Windows.Forms.Padding(4);
+            this.coBxEmpanada.Name = "coBxEmpanada";
+            this.coBxEmpanada.Size = new System.Drawing.Size(55, 24);
+            this.coBxEmpanada.TabIndex = 54;
             // 
             // grBxPostres
             // 
@@ -589,21 +589,21 @@
             this.salchipapaLabel.Size = new System.Drawing.Size(148, 22);
             this.salchipapaLabel.TabIndex = 19;
             // 
-            // textBox9
+            // tequeLabel
             // 
-            this.textBox9.Location = new System.Drawing.Point(85, 517);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(148, 22);
-            this.textBox9.TabIndex = 20;
+            this.tequeLabel.Location = new System.Drawing.Point(85, 517);
+            this.tequeLabel.Margin = new System.Windows.Forms.Padding(4);
+            this.tequeLabel.Name = "tequeLabel";
+            this.tequeLabel.Size = new System.Drawing.Size(148, 22);
+            this.tequeLabel.TabIndex = 20;
             // 
-            // textBox10
+            // empanadaLabel
             // 
-            this.textBox10.Location = new System.Drawing.Point(85, 485);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(148, 22);
-            this.textBox10.TabIndex = 21;
+            this.empanadaLabel.Location = new System.Drawing.Point(85, 485);
+            this.empanadaLabel.Margin = new System.Windows.Forms.Padding(4);
+            this.empanadaLabel.Name = "empanadaLabel";
+            this.empanadaLabel.Size = new System.Drawing.Size(148, 22);
+            this.empanadaLabel.TabIndex = 21;
             // 
             // textBox11
             // 
@@ -693,21 +693,21 @@
             this.salchipapaUnidades.Size = new System.Drawing.Size(47, 22);
             this.salchipapaUnidades.TabIndex = 32;
             // 
-            // textBox22
+            // empanadaUnidades
             // 
-            this.textBox22.Location = new System.Drawing.Point(263, 481);
-            this.textBox22.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(47, 22);
-            this.textBox22.TabIndex = 33;
+            this.empanadaUnidades.Location = new System.Drawing.Point(263, 481);
+            this.empanadaUnidades.Margin = new System.Windows.Forms.Padding(4);
+            this.empanadaUnidades.Name = "empanadaUnidades";
+            this.empanadaUnidades.Size = new System.Drawing.Size(47, 22);
+            this.empanadaUnidades.TabIndex = 33;
             // 
-            // textBox23
+            // tequeUnidades
             // 
-            this.textBox23.Location = new System.Drawing.Point(263, 513);
-            this.textBox23.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(47, 22);
-            this.textBox23.TabIndex = 34;
+            this.tequeUnidades.Location = new System.Drawing.Point(263, 513);
+            this.tequeUnidades.Margin = new System.Windows.Forms.Padding(4);
+            this.tequeUnidades.Name = "tequeUnidades";
+            this.tequeUnidades.Size = new System.Drawing.Size(47, 22);
+            this.tequeUnidades.TabIndex = 34;
             // 
             // textBox24
             // 
@@ -765,21 +765,21 @@
             this.salchipapaPrecio.Size = new System.Drawing.Size(89, 22);
             this.salchipapaPrecio.TabIndex = 41;
             // 
-            // textBox31
+            // empanadaPrecio
             // 
-            this.textBox31.Location = new System.Drawing.Point(355, 480);
-            this.textBox31.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(89, 22);
-            this.textBox31.TabIndex = 42;
+            this.empanadaPrecio.Location = new System.Drawing.Point(355, 480);
+            this.empanadaPrecio.Margin = new System.Windows.Forms.Padding(4);
+            this.empanadaPrecio.Name = "empanadaPrecio";
+            this.empanadaPrecio.Size = new System.Drawing.Size(89, 22);
+            this.empanadaPrecio.TabIndex = 42;
             // 
-            // textBox32
+            // tequePrecio
             // 
-            this.textBox32.Location = new System.Drawing.Point(355, 512);
-            this.textBox32.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(89, 22);
-            this.textBox32.TabIndex = 43;
+            this.tequePrecio.Location = new System.Drawing.Point(355, 512);
+            this.tequePrecio.Margin = new System.Windows.Forms.Padding(4);
+            this.tequePrecio.Name = "tequePrecio";
+            this.tequePrecio.Size = new System.Drawing.Size(89, 22);
+            this.tequePrecio.TabIndex = 43;
             // 
             // textBox33
             // 
@@ -928,8 +928,8 @@
             this.Controls.Add(this.textBox35);
             this.Controls.Add(this.textBox34);
             this.Controls.Add(this.textBox33);
-            this.Controls.Add(this.textBox32);
-            this.Controls.Add(this.textBox31);
+            this.Controls.Add(this.tequePrecio);
+            this.Controls.Add(this.empanadaPrecio);
             this.Controls.Add(this.salchipapaPrecio);
             this.Controls.Add(this.perrocalientePrecio);
             this.Controls.Add(this.pizzaPrecio);
@@ -937,8 +937,8 @@
             this.Controls.Add(this.aguaPrecio);
             this.Controls.Add(this.textBox25);
             this.Controls.Add(this.textBox24);
-            this.Controls.Add(this.textBox23);
-            this.Controls.Add(this.textBox22);
+            this.Controls.Add(this.tequeUnidades);
+            this.Controls.Add(this.empanadaUnidades);
             this.Controls.Add(this.salchipapaUnidades);
             this.Controls.Add(this.perrocalienteUnidades);
             this.Controls.Add(this.pizzaUnidades);
@@ -950,8 +950,8 @@
             this.Controls.Add(this.subtotalLabel);
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.empanadaLabel);
+            this.Controls.Add(this.tequeLabel);
             this.Controls.Add(this.salchipapaLabel);
             this.Controls.Add(this.perrocalienteLabel);
             this.Controls.Add(this.pizzaLabel);
@@ -1003,8 +1003,8 @@
         private System.Windows.Forms.TextBox pizzaLabel;
         private System.Windows.Forms.TextBox perrocalienteLabel;
         private System.Windows.Forms.TextBox salchipapaLabel;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox tequeLabel;
+        private System.Windows.Forms.TextBox empanadaLabel;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox subtotalLabel;
@@ -1016,8 +1016,8 @@
         private System.Windows.Forms.TextBox pizzaUnidades;
         private System.Windows.Forms.TextBox perrocalienteUnidades;
         private System.Windows.Forms.TextBox salchipapaUnidades;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox empanadaUnidades;
+        private System.Windows.Forms.TextBox tequeUnidades;
         private System.Windows.Forms.TextBox textBox24;
         private System.Windows.Forms.TextBox textBox25;
         private System.Windows.Forms.TextBox aguaPrecio;
@@ -1025,8 +1025,8 @@
         private System.Windows.Forms.TextBox pizzaPrecio;
         private System.Windows.Forms.TextBox perrocalientePrecio;
         private System.Windows.Forms.TextBox salchipapaPrecio;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBox32;
+        private System.Windows.Forms.TextBox empanadaPrecio;
+        private System.Windows.Forms.TextBox tequePrecio;
         private System.Windows.Forms.TextBox textBox33;
         private System.Windows.Forms.TextBox textBox34;
         private System.Windows.Forms.TextBox textBox35;
@@ -1042,8 +1042,8 @@
         private System.Windows.Forms.ComboBox coBxSalchipapas;
         private System.Windows.Forms.ComboBox coBxPerrocaliente;
         private System.Windows.Forms.ComboBox coBxPizza;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox coBxteque;
+        private System.Windows.Forms.ComboBox coBxEmpanada;
         private System.Windows.Forms.ComboBox comboBox10;
         private System.Windows.Forms.ComboBox comboBox9;
         private System.Windows.Forms.Label txCoca;

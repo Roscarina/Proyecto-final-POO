@@ -205,6 +205,8 @@ namespace Proyecto_Final
             }
 
             int precioTotalPerrocaliente = 0;
+
+
             {
                 var selectedValue = coBxPerrocaliente.Text;
                 int perrocalienteCount = 0;
@@ -225,7 +227,9 @@ namespace Proyecto_Final
                     precioTotalPerrocaliente = perrocalienteCount * perroCalientePrecioUnitario;
                 }
             }
+           
             int precioTotalSalchipapa = 0;
+
             {
                 var selectedValue = coBxSalchipapas.Text;
                 int salchipapaCount = 0;
@@ -243,9 +247,48 @@ namespace Proyecto_Final
 
                     precioTotalSalchipapa = salchipapaCount *   salchipapaPrecioUnitario;
                 }
+
             }
 
-            int valorSubTotal = precioTotalCoca + precioTotalAgua + precioTotalChica + precioTotalPizza + precioTotalPerrocaliente + precioTotalSalchipapa;
+            int precioTotalEmpanada = 0;
+
+            {
+                var selectedValue = coBxEmpanada.Text;
+                int empanadaCount = 0;
+                if ( selectedValue != "")
+                {
+                    empanadaCount = Convert.ToInt32(selectedValue.ToString());
+                }
+
+                int empanadaPrecioUnitario = 10_000;
+
+                if (empanadaCount > 0)
+                {
+                    empanadaLabel.Text = "Empanadas";
+                    empanadaPrecio.Text = "$" + empanadaPrecioUnitario.ToString();
+                    empanadaUnidades.Text = empanadaCount.ToString();
+
+                    precioTotalEmpanada = empanadaCount * empanadaPrecioUnitario;
+
+                }
+
+            }
+
+            int precioTotalTeque = 0;
+
+            {
+                var selectedValue = coBxteque.Text;
+                int tequeCount = 0;
+                if ( selectedValue != "")
+                {
+                    tequeCount = Convert.ToInt32(selectedValue.ToString());
+                }
+
+
+            }
+
+
+            int valorSubTotal = precioTotalCoca + precioTotalAgua + precioTotalChica + precioTotalPizza + precioTotalPerrocaliente + precioTotalSalchipapa + precioTotalEmpanada;
             subtotal.Text = "$" + valorSubTotal.ToString();
         }
 
