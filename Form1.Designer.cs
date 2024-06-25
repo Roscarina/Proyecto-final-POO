@@ -52,8 +52,8 @@
             this.grBxPostres = new System.Windows.Forms.GroupBox();
             this.txTresleche = new System.Windows.Forms.Label();
             this.txTortadechocolate = new System.Windows.Forms.Label();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.coBxTortadechocolate = new System.Windows.Forms.ComboBox();
+            this.coBxTresleche = new System.Windows.Forms.ComboBox();
             this.lblNombreRestaurante = new System.Windows.Forms.Label();
             this.lblNit = new System.Windows.Forms.Label();
             this.cocacolaLabel = new System.Windows.Forms.TextBox();
@@ -66,8 +66,8 @@
             this.salchipapaLabel = new System.Windows.Forms.TextBox();
             this.tequeLabel = new System.Windows.Forms.TextBox();
             this.empanadaLabel = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.treslecheLabel = new System.Windows.Forms.TextBox();
+            this.tortadechocolateLabel = new System.Windows.Forms.TextBox();
             this.subtotalLabel = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
@@ -79,8 +79,8 @@
             this.salchipapaUnidades = new System.Windows.Forms.TextBox();
             this.empanadaUnidades = new System.Windows.Forms.TextBox();
             this.tequeUnidades = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.treslecheUnidades = new System.Windows.Forms.TextBox();
+            this.tortadechocolateUnidades = new System.Windows.Forms.TextBox();
             this.aguaPrecio = new System.Windows.Forms.TextBox();
             this.chichaPrecio = new System.Windows.Forms.TextBox();
             this.pizzaPrecio = new System.Windows.Forms.TextBox();
@@ -88,8 +88,8 @@
             this.salchipapaPrecio = new System.Windows.Forms.TextBox();
             this.empanadaPrecio = new System.Windows.Forms.TextBox();
             this.tequePrecio = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.treslechePrecio = new System.Windows.Forms.TextBox();
+            this.tortadechocolatePrecio = new System.Windows.Forms.TextBox();
             this.textBox35 = new System.Windows.Forms.TextBox();
             this.textBox36 = new System.Windows.Forms.TextBox();
             this.buttonCalcular = new System.Windows.Forms.Button();
@@ -429,8 +429,8 @@
             // 
             this.grBxPostres.Controls.Add(this.txTresleche);
             this.grBxPostres.Controls.Add(this.txTortadechocolate);
-            this.grBxPostres.Controls.Add(this.comboBox10);
-            this.grBxPostres.Controls.Add(this.comboBox9);
+            this.grBxPostres.Controls.Add(this.coBxTortadechocolate);
+            this.grBxPostres.Controls.Add(this.coBxTresleche);
             this.grBxPostres.Location = new System.Drawing.Point(997, 327);
             this.grBxPostres.Margin = new System.Windows.Forms.Padding(4);
             this.grBxPostres.Name = "grBxPostres";
@@ -459,10 +459,10 @@
             this.txTortadechocolate.Text = "Torta de Chocolate";
             this.txTortadechocolate.Click += new System.EventHandler(this.txTortadechocolate_Click);
             // 
-            // comboBox10
+            // coBxTortadechocolate
             // 
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
+            this.coBxTortadechocolate.FormattingEnabled = true;
+            this.coBxTortadechocolate.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
@@ -474,16 +474,16 @@
             "8",
             "9",
             "10"});
-            this.comboBox10.Location = new System.Drawing.Point(169, 73);
-            this.comboBox10.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(55, 24);
-            this.comboBox10.TabIndex = 54;
+            this.coBxTortadechocolate.Location = new System.Drawing.Point(169, 73);
+            this.coBxTortadechocolate.Margin = new System.Windows.Forms.Padding(4);
+            this.coBxTortadechocolate.Name = "coBxTortadechocolate";
+            this.coBxTortadechocolate.Size = new System.Drawing.Size(55, 24);
+            this.coBxTortadechocolate.TabIndex = 54;
             // 
-            // comboBox9
+            // coBxTresleche
             // 
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
+            this.coBxTresleche.FormattingEnabled = true;
+            this.coBxTresleche.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
@@ -495,11 +495,11 @@
             "8",
             "9",
             "10"});
-            this.comboBox9.Location = new System.Drawing.Point(169, 27);
-            this.comboBox9.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(55, 24);
-            this.comboBox9.TabIndex = 54;
+            this.coBxTresleche.Location = new System.Drawing.Point(169, 27);
+            this.coBxTresleche.Margin = new System.Windows.Forms.Padding(4);
+            this.coBxTresleche.Name = "coBxTresleche";
+            this.coBxTresleche.Size = new System.Drawing.Size(55, 24);
+            this.coBxTresleche.TabIndex = 54;
             // 
             // lblNombreRestaurante
             // 
@@ -605,21 +605,21 @@
             this.empanadaLabel.Size = new System.Drawing.Size(148, 22);
             this.empanadaLabel.TabIndex = 21;
             // 
-            // textBox11
+            // treslecheLabel
             // 
-            this.textBox11.Location = new System.Drawing.Point(85, 544);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(148, 22);
-            this.textBox11.TabIndex = 22;
+            this.treslecheLabel.Location = new System.Drawing.Point(85, 544);
+            this.treslecheLabel.Margin = new System.Windows.Forms.Padding(4);
+            this.treslecheLabel.Name = "treslecheLabel";
+            this.treslecheLabel.Size = new System.Drawing.Size(148, 22);
+            this.treslecheLabel.TabIndex = 22;
             // 
-            // textBox12
+            // tortadechocolateLabel
             // 
-            this.textBox12.Location = new System.Drawing.Point(85, 576);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(148, 22);
-            this.textBox12.TabIndex = 23;
+            this.tortadechocolateLabel.Location = new System.Drawing.Point(85, 576);
+            this.tortadechocolateLabel.Margin = new System.Windows.Forms.Padding(4);
+            this.tortadechocolateLabel.Name = "tortadechocolateLabel";
+            this.tortadechocolateLabel.Size = new System.Drawing.Size(148, 22);
+            this.tortadechocolateLabel.TabIndex = 23;
             // 
             // subtotalLabel
             // 
@@ -709,21 +709,21 @@
             this.tequeUnidades.Size = new System.Drawing.Size(47, 22);
             this.tequeUnidades.TabIndex = 34;
             // 
-            // textBox24
+            // treslecheUnidades
             // 
-            this.textBox24.Location = new System.Drawing.Point(263, 544);
-            this.textBox24.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(47, 22);
-            this.textBox24.TabIndex = 35;
+            this.treslecheUnidades.Location = new System.Drawing.Point(263, 544);
+            this.treslecheUnidades.Margin = new System.Windows.Forms.Padding(4);
+            this.treslecheUnidades.Name = "treslecheUnidades";
+            this.treslecheUnidades.Size = new System.Drawing.Size(47, 22);
+            this.treslecheUnidades.TabIndex = 35;
             // 
-            // textBox25
+            // tortadechocolateUnidades
             // 
-            this.textBox25.Location = new System.Drawing.Point(263, 575);
-            this.textBox25.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(47, 22);
-            this.textBox25.TabIndex = 36;
+            this.tortadechocolateUnidades.Location = new System.Drawing.Point(263, 575);
+            this.tortadechocolateUnidades.Margin = new System.Windows.Forms.Padding(4);
+            this.tortadechocolateUnidades.Name = "tortadechocolateUnidades";
+            this.tortadechocolateUnidades.Size = new System.Drawing.Size(47, 22);
+            this.tortadechocolateUnidades.TabIndex = 36;
             // 
             // aguaPrecio
             // 
@@ -781,21 +781,21 @@
             this.tequePrecio.Size = new System.Drawing.Size(89, 22);
             this.tequePrecio.TabIndex = 43;
             // 
-            // textBox33
+            // treslechePrecio
             // 
-            this.textBox33.Location = new System.Drawing.Point(355, 544);
-            this.textBox33.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(89, 22);
-            this.textBox33.TabIndex = 44;
+            this.treslechePrecio.Location = new System.Drawing.Point(355, 544);
+            this.treslechePrecio.Margin = new System.Windows.Forms.Padding(4);
+            this.treslechePrecio.Name = "treslechePrecio";
+            this.treslechePrecio.Size = new System.Drawing.Size(89, 22);
+            this.treslechePrecio.TabIndex = 44;
             // 
-            // textBox34
+            // tortadechocolatePrecio
             // 
-            this.textBox34.Location = new System.Drawing.Point(355, 576);
-            this.textBox34.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(89, 22);
-            this.textBox34.TabIndex = 45;
+            this.tortadechocolatePrecio.Location = new System.Drawing.Point(355, 576);
+            this.tortadechocolatePrecio.Margin = new System.Windows.Forms.Padding(4);
+            this.tortadechocolatePrecio.Name = "tortadechocolatePrecio";
+            this.tortadechocolatePrecio.Size = new System.Drawing.Size(89, 22);
+            this.tortadechocolatePrecio.TabIndex = 45;
             // 
             // textBox35
             // 
@@ -926,8 +926,8 @@
             this.Controls.Add(this.buttonCalcular);
             this.Controls.Add(this.textBox36);
             this.Controls.Add(this.textBox35);
-            this.Controls.Add(this.textBox34);
-            this.Controls.Add(this.textBox33);
+            this.Controls.Add(this.tortadechocolatePrecio);
+            this.Controls.Add(this.treslechePrecio);
             this.Controls.Add(this.tequePrecio);
             this.Controls.Add(this.empanadaPrecio);
             this.Controls.Add(this.salchipapaPrecio);
@@ -935,8 +935,8 @@
             this.Controls.Add(this.pizzaPrecio);
             this.Controls.Add(this.chichaPrecio);
             this.Controls.Add(this.aguaPrecio);
-            this.Controls.Add(this.textBox25);
-            this.Controls.Add(this.textBox24);
+            this.Controls.Add(this.tortadechocolateUnidades);
+            this.Controls.Add(this.treslecheUnidades);
             this.Controls.Add(this.tequeUnidades);
             this.Controls.Add(this.empanadaUnidades);
             this.Controls.Add(this.salchipapaUnidades);
@@ -948,8 +948,8 @@
             this.Controls.Add(this.textBox15);
             this.Controls.Add(this.textBox14);
             this.Controls.Add(this.subtotalLabel);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.tortadechocolateLabel);
+            this.Controls.Add(this.treslecheLabel);
             this.Controls.Add(this.empanadaLabel);
             this.Controls.Add(this.tequeLabel);
             this.Controls.Add(this.salchipapaLabel);
@@ -1005,8 +1005,8 @@
         private System.Windows.Forms.TextBox salchipapaLabel;
         private System.Windows.Forms.TextBox tequeLabel;
         private System.Windows.Forms.TextBox empanadaLabel;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox treslecheLabel;
+        private System.Windows.Forms.TextBox tortadechocolateLabel;
         private System.Windows.Forms.TextBox subtotalLabel;
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.TextBox textBox15;
@@ -1018,8 +1018,8 @@
         private System.Windows.Forms.TextBox salchipapaUnidades;
         private System.Windows.Forms.TextBox empanadaUnidades;
         private System.Windows.Forms.TextBox tequeUnidades;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.TextBox treslecheUnidades;
+        private System.Windows.Forms.TextBox tortadechocolateUnidades;
         private System.Windows.Forms.TextBox aguaPrecio;
         private System.Windows.Forms.TextBox chichaPrecio;
         private System.Windows.Forms.TextBox pizzaPrecio;
@@ -1027,8 +1027,8 @@
         private System.Windows.Forms.TextBox salchipapaPrecio;
         private System.Windows.Forms.TextBox empanadaPrecio;
         private System.Windows.Forms.TextBox tequePrecio;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.TextBox textBox34;
+        private System.Windows.Forms.TextBox treslechePrecio;
+        private System.Windows.Forms.TextBox tortadechocolatePrecio;
         private System.Windows.Forms.TextBox textBox35;
         private System.Windows.Forms.TextBox textBox36;
         private System.Windows.Forms.Button buttonCalcular;
@@ -1044,8 +1044,8 @@
         private System.Windows.Forms.ComboBox coBxPizza;
         private System.Windows.Forms.ComboBox coBxteque;
         private System.Windows.Forms.ComboBox coBxEmpanada;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox coBxTortadechocolate;
+        private System.Windows.Forms.ComboBox coBxTresleche;
         private System.Windows.Forms.Label txCoca;
         private System.Windows.Forms.Label txAgua;
         private System.Windows.Forms.Label txChicha;
