@@ -284,12 +284,68 @@ namespace Proyecto_Final
                     tequeCount = Convert.ToInt32(selectedValue.ToString());
                 }
 
+                int tequePrecioUnitario = 15_000;
+
+                if ( tequeCount > 0)
+                {
+                    tequeLabel.Text = "Tequeños";
+                    tequePrecio.Text = "$" + tequePrecioUnitario.ToString();
+                    tequeUnidades.Text = tequeCount.ToString();
+
+                    precioTotalTeque = tequeCount * tequePrecioUnitario;
+                }
 
             }
 
+            int precioTotalTresleche = 0;
 
-            int valorSubTotal = precioTotalCoca + precioTotalAgua + precioTotalChica + precioTotalPizza + precioTotalPerrocaliente + precioTotalSalchipapa + precioTotalEmpanada;
+            {
+                var seletedValue = coBxTresleche.Text;
+                int TreslecheCount = 0;
+                if ( seletedValue != "")
+                {
+                    TreslecheCount = Convert.ToInt32(seletedValue.ToString());
+                }
+
+                int treslechePrecioUnitario = 12_000;
+
+                if ( TreslecheCount > 0)
+                {
+                    treslecheLabel.Text = "Tres Leche";
+                    treslechePrecio.Text = "$" + treslechePrecioUnitario.ToString();
+                    treslecheUnidades.Text = TreslecheCount.ToString();
+
+                    precioTotalTresleche = TreslecheCount * treslechePrecioUnitario;
+                }
+            }
+            
+            int precioTotalTortadechocolate = 0;
+
+            {
+                var selectdValue = coBxTortadechocolate.Text;
+                int tortadechocolateCount = 0;
+                if ( selectdValue != "")
+                {
+                    tortadechocolateCount = Convert.ToInt32(selectdValue.ToString());
+                }
+
+                int tortadechocolatePrecioUnitario = 15_000;
+
+                if ( tortadechocolateCount > 0)
+                {
+                    tortadechocolateLabel.Text = "Torta de Chocolate";
+                    tortadechocolatePrecio.Text = "$" + tortadechocolatePrecioUnitario.ToString();
+                    tortadechocolateUnidades.Text = tortadechocolateCount.ToString();
+
+                    precioTotalTortadechocolate = tortadechocolateCount + tortadechocolatePrecioUnitario;
+                }
+            }
+
+
+
+            int valorSubTotal = precioTotalCoca + precioTotalAgua + precioTotalChica + precioTotalPizza + precioTotalPerrocaliente + precioTotalSalchipapa + precioTotalEmpanada + precioTotalTeque + precioTotalTresleche + precioTotalTortadechocolate;
             subtotal.Text = "$" + valorSubTotal.ToString();
+
         }
 
         private void grBxBebidas_Enter(object sender, EventArgs e)
