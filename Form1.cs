@@ -15,6 +15,11 @@ namespace Proyecto_Final
         public Form1()
         {
             InitializeComponent();
+            grBxBebidas.Visible = false;
+            grBxPlatofuerte.Visible = false;
+            grBxEntradas.Visible = false;
+            grBxPostres.Visible = false;
+            
         }
 
         private void chBxBebidas_CheckedChanged(object sender, EventArgs e)
